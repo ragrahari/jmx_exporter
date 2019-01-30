@@ -2,6 +2,8 @@ FROM centos:7
 
 MAINTAINER Rupesh Agrahari <rupesha157@gmail.com>
 
+USER root
+
 RUN yum install git -y && \
     yum install maven -y && \
     cd /tmp/ && \
