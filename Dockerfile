@@ -4,9 +4,9 @@ MAINTAINER Rupesh Agrahari <rupesha157@gmail.com>
 
 USER root
 
-RUN yum install git -y && \
-    yum install maven -y && \
-    cd /tmp/ && \
+RUN yum install git -y
+RUN yum install maven -y
+RUN cd /tmp/ && \
     git clone https://github.com/prometheus/jmx_exporter.git && \
     cd jmx_exporter && \
     mvn package
